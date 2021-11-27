@@ -1,0 +1,155 @@
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    z-index: 1;
+    animation: displayLightbox 500ms linear;
+
+    @include tablet {
+        height: 100%;       
+    }
+
+    button {
+        opacity: 0.8;
+        transition: 300ms;
+        cursor: pointer;
+        margin: 20px;
+        width: 40px;
+        z-index: 2;
+        &:hover {
+            transition: 200ms;
+            opacity: 1;
+        }
+    }
+    &__close {
+        background: url(./svg/Vector.svg) center center / 30px no-repeat;
+        height: 50px;
+        border: none;
+        position: absolute;
+        top: 3%;
+        right: 18%;
+        
+        @include desktop { 
+            right: 1%;
+            top: 60px;
+        }
+        
+        @include tablet { 
+            background: url(./svg/Vector.svg) center center / 15px no-repeat;
+            right: -4%;
+            top: 27%;
+        }
+
+    }
+    &__prev {
+        background: url(./svg/Vector-next.svg) center center / 30px no-repeat;
+        height: 50px;
+        border: none;
+        transform: rotate(180deg);
+        position: absolute;
+        left: 18%;
+        top: 45%;
+        
+        @include desktop { 
+            left: 0%;
+        }
+
+        @include tablet { 
+            background: url(./svg/Vector-next.svg) center center / 15px no-repeat;
+            left: -6%;
+        }
+
+    }
+    &__next {
+        background: url(./svg/Vector-next.svg) center center / 30px no-repeat;
+        height: 50px;
+        border: none;
+        right: 18%;
+        position: absolute;
+        top: 45%;
+
+        @include desktop { 
+            right: 0%;
+        }
+
+        @include tablet { 
+            background: url(./svg/Vector-next.svg) center center / 15px no-repeat;
+            right: -6%;
+        }
+    }
+    &__container {
+        margin: auto;
+        padding: 50px 20%;
+        display: flex;
+        justify-content: center;
+
+        @include tablet {
+            
+        }
+        
+        img, video {
+            margin: auto;
+            object-fit: cover;
+            width: 50%;
+            height: 700px;
+            z-index: 2;
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            @include desktop {
+              
+                width: 60%;
+                height: 580px;
+            }
+
+            @include tablet {
+               
+                width: 80%;
+                height: 280px;
+            }
+        }
+    }
+    &__heading {
+        position: absolute;
+        left: 25%;
+        bottom: 25px;
+        color: $primary;
+        font-size: 1.2em;
+
+        @include desktop {
+            left: 20%;
+            bottom: 5%;
+        }
+
+        @include tablet {
+            left: 10%;
+            bottom: 26%;
+        }
+    }
+}
+
+#blocker {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@keyframes displayLightbox {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

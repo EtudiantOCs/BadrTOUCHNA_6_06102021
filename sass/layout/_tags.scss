@@ -1,0 +1,73 @@
+/* for all tag lists */
+.tag-list {
+     list-style-type:none;
+     display: flex;
+     justify-content: center;
+
+    .tag {
+        border: 0.01px solid $grey;
+        border-radius: 2.4em;
+        padding: 5px 10px;
+        margin: 3px 5px;
+        color: $primary;
+        font-weight: 500;
+        font-size: 0.9em;
+        cursor: pointer;
+
+        transition: 500ms;
+    }
+}
+
+/* only for navigation tags */
+.nav-tag-list {
+    user-select: none;  
+    &:hover .tag:not(:hover){
+        opacity: 0.5;
+        transition: 500ms;
+      }
+      .tag {
+          cursor: pointer;
+        &:hover {
+            opacity: 1;
+            border-color: $primary;
+        }
+      }
+}
+
+
+/* selected profiles*/
+.photographer-profile[tag-selected="true"] {
+    display: block;
+}
+
+.photographer-profile[tag-selected="false"] {
+    display: none;
+}
+
+/* selected tag */
+.tag[my-tag="true"] {
+    font-weight: 800;
+    border-color: $primary;
+
+    &:hover {
+        border-color: gray;
+        color: gray;
+        transition: none;
+        @include tablet { border-color: unset;
+            color: unset;
+            transition: unset;
+        }
+        &::after { content: ' x';
+            color: rgba(202, 0, 0, 0.719);
+            @include tablet {
+                content: none;
+                color: unset; 
+            } 
+        }
+            
+    }
+}
+    
+.tag[my-tag="false"] {
+    opacity: 0.6;
+}

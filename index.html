@@ -1,22 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-    <title>Fisheye</title>
-  </head>
-  <body>
-    <header>
-        <img src="assets/images/logo.png" class="logo" />
-        <h1>Nos photographes</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <title>Fishe Eye - Accueil</title>
+</head>
+<body>
+
+    <header class="main_header">
+        <div class="banner">
+            <img src="./svg/logo.svg" aria-label="logo" alt="Fisheye page d'accueil">
+        </div>
+
+        <a id="link-to-main" class="tab-element" aria-label="Aller directement au contenu" href="#catalog">Passer au contenu</a>
+        
+        <nav class="header-tags" id="nav-tags">
+            <ul aria-label="Filtrer les photographes par thème" class="tag-list nav-tag-list">
+              </ul> 
+        </nav>
     </header>
-    <main id="main">
-        <div class="photographer_section"></div>
+
+    <main>
+
+        <div class="title">
+            <h1 id="our-photographers">Nos photographes</h1>
+        </div>
+        <section id="catalog" class="catalog tab-element" aria-label="catalogue de photographes">
+        </section>
     </main>
-    <script src="scripts/factories/Photographer.js"></script>
-    <script src="scripts/pages/index.js"></script>
-    <script src="scripts/pages/photographer.js"></script>
-  </body>
+    <script type="module" src="./javascript/main.js"></script>
+</body>
 </html>

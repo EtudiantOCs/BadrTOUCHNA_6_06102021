@@ -1,0 +1,120 @@
+#sort-by-label {
+    font-weight: 600;
+    margin-right: 20px;
+    @include tablet {
+        display: none;
+    }
+}
+
+.sort-by {
+    @include tablet {
+        display: none
+    } 
+}
+
+.gallery {
+    @extend .catalog;
+    grid-gap: 100px;
+}
+
+/*
+ * Modifies _photographer_profile.scss
+ */  
+.profile-container {
+    
+    display: flex;
+    justify-content: start;
+    margin: 50px;
+    
+    figure a, figure > h2{
+        pointer-events: none;
+    }
+    
+    img {
+        position: absolute;
+        left: 80%;
+        top: 180px;
+
+        @include desktop {
+            left: 75%;
+        }
+    }
+    .photographer-profile__tagline {
+        color: gray;
+    }
+    .photographer-profile__price {
+        display: none;
+    }
+
+    @include tablet {
+        padding: 0;
+        margin: 0 $small-spacing;            
+        
+        .photographer-profile {
+            text-align: left;
+            width: 70%;
+
+            img {
+                width: 130px;
+                height: 130px;
+                right: 2%;
+                left: auto;
+                top: 140px;
+            }
+            &__tagline {
+                width: 80%;
+            }
+            .tag-list {
+                justify-content: start;
+                flex-wrap: wrap;
+                width: 80%;
+                padding-left: 0;
+            }
+            .tag {
+                font-size: 0.8em;
+                padding: 5px;
+            }
+        }
+    }
+    @include small-mobile {
+        .photographer-profile {
+            width: 60%;
+        }
+    }
+
+}
+
+
+#total-likes {
+    width: 200px;
+    display: flex;
+    padding: 15px;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #DB8876;
+    position: fixed;
+    bottom: 0px;
+    left: 80%;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 5px 5px 0px 0px;
+    i {
+        margin-right: 20px;
+    }
+
+    @include tablet {
+        display: none;
+    }
+}
+
+#error-not-found {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    text-align: center;
+    margin: $big-spacing $small-spacing;
+
+    @include tablet {
+        font-size: 1.2em;
+    }
+}

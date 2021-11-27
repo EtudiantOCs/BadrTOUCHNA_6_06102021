@@ -1,0 +1,60 @@
+.gallery {
+    @include tablet {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 80px;
+    }
+}
+
+.media {
+    width: 100%;
+    @include fade-in-animation($slow-duration);
+
+    @include tablet {
+        margin: 30px 10px;
+        width: auto;
+    }
+    
+    img, video {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    &__heading {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 10fr 1fr 1fr;
+        color: $primary;
+        font-weight: 400;
+        font-size: 1.2em;
+        
+        i {
+            text-align: end;
+            cursor: pointer;
+            transition: 200ms;
+        
+            &:hover { 
+                transform: scale(1.1);
+                transition: 200ms;
+            }
+            &:active {
+                animation: like 800ms linear;
+                color: red;
+            }
+        }
+    }
+}
+
+@keyframes like {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}

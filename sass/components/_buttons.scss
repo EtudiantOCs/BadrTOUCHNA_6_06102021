@@ -1,0 +1,58 @@
+.contact {
+    order: 2;
+    height: 70px;
+    background-color: $primary;
+    color: white;
+    border-radius: 5px;
+    border-width: 0;
+    width: 130px;
+    padding: 20px 0px;
+    font-weight: 500;
+    font-size: 1em;
+    font-family: 'DM Sans', sans-serif;
+    transition: 200ms;
+
+    &:hover, &:focus {
+        background-color: $form-color;
+        transition: 500ms;
+        filter: brightness(120%);
+        cursor: pointer;
+        color: black;
+    }
+
+    @include tablet {
+        position: fixed;
+        margin: auto;
+        left: 10%;
+        right: 10%;
+        bottom: 3%;
+        padding: 5px 10px;
+        height: auto;
+        width: 40%;
+    }
+}
+
+// Passer au contenu btn
+
+#link-to-main {
+    @extend .contact;
+    position: fixed;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    left: 10%;
+    right: 10%;
+    top: 2%;
+    padding: 5px 0px;
+    height: 20px;
+    width: 180px;
+    text-decoration: none;
+    opacity: 0;
+    &:hover, &:focus {
+        opacity: 1;
+    }
+
+    @include tablet {
+        display: none;
+    }
+}

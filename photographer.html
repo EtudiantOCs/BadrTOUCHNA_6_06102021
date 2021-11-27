@@ -1,36 +1,114 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-    <title>Fisheye - photographe </title>
-  </head>
-  <body>
-    <header>
-      <img src="assets/images/logo.png" class="logo" />
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1d4b85ca7e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>Fishe Eye - Galerie du photographe</title>
+</head>
+<body aria-hidden="false" class="photographer-gallery">
+
+    <header class="photographer_header">
+        <div class="banner">
+            <a id="backhome" class="back-home-link tab-element" aria-label="Fish eye retour vers la page d'accueil" href="index.html">
+                <img src="./svg/logo.svg" aria-labelledby="backhome" role="button">
+            </a>
+        </div>
     </header>
-    <main id="main">
-      <div class="photograph-header">
-        <button class="contact_button" onclick="displayModal()">Contactez-moi</button>
-      </div>
+
+    <main>
+        <section class="catalog profile-container" aria-label="profil du photographe">
+            <button id="contact-me" class="contact tab-element" aria-label="contacter le photographe">Contactez-moi</button>
+        </section>
+
+        <section class="gallery-container"  aria-hidden="false">
+
+            <label id="sort-by-label" aria-label="Trier la gallerie photo par" for="sort-by">Trier par</label>
+
+            <select class="sort-by tab-element" id="sort-by" aria-labelledby="sort-by-label">
+                <option class="sort-by__option" aria-label="trié par nombre de like" value="likes">Popularité</option>
+                <option class="sort-by__option" aria-label="trié par date " value="date">Date</option>
+                <option class="sort-by__option" aria-label="trié par nom" value="title">Titre</option>
+            </select>
+
+            <section class="gallery" aria-label="galerie photo">
+            </section>
+
+        </section>
+
+        <!-- Formulaire contact me (hidden) -->
+        <div class="form-container" id="form-contact" role="dialog" aria-label="formulaire de contact">
+
+            <div class="close tab-element-modal" id="close-form" aria-label="fermer le formulaire de contact"></div>
+            <form onsubmit="return false">
+
+                <p id="form-title">Contactez-moi </p>
+          
+                <div class="form-data-container" id="form-firstname-container">
+                    <label id="firstname" for="firstname">Prénom</label>
+                    <input class="form-data tab-element-modal" type="text" id="form-firstname" aria-labelledby="firstname" name="firstname" pattern="^[a-zA-Z ]*$" required minlength="2">
+                </div>
+                
+                <div class="form-data-container" id="form-lastname-container">
+                    <label for="last-name" id="lastname">Nom</label>
+                    <input class="form-data tab-element-modal" type="text" id="form-lastname" aria-labelledby="lastname" name="lastname" pattern="^[a-zA-Z ]*$" required minlength="2" aria-required="true">
+                </div>
+                
+                <div class="form-data-container" id="form-email-container">
+                  <label for="email" id="email">Email</label>
+                  <input class="form-data tab-element-modal" type="email" id="form-email" name="email" aria-labelledby="email" required aria-required="true">
+                </div>
+
+              
+                <div class="form-data-container" id="form-msg-container">
+                    <label for="subject" id="yourmsg">Votre message</label>
+                    <textarea type="textbox" class="form-data tab-element-modal" id="form-msg" name="subject" aria-labelledby="yourmsg" minlength="50" required aria-required="true"></textarea>
+                  </div>
+                
+          
+              <input id="form-btn" class="tab-element-modal" type="submit" onclick="validate()" role="button" aria-label="envoyer le message" value="Envoyer">
+          
+            </form>
+        </div>
+        
+        <!-- Confirmation form (hidden)-->
+        <div class="form-container" id="form-sent" role="dialog" aria-label="message de confirmation">
+
+            <div class="close tab-element-confirmation-modal" id="close-confirmation"></div>
+            <div id="confirmation-msg">
+            </div>
+
+        </div> 
+
+        <!-- Lightbox (hidden)-->
+        <figure class="lightbox" aria-label="vue en grand écran" id="lightbox">
+            
+            <button class="lightbox__prev" aria-label="image précedente" id="lightbox-prev"></button>
+            <div class="lightbox__container" id="lightbox-container">
+                
+            </div>
+            <button class="lightbox__close" aria-label="fermer la boite" id="lightbox-close"></button>
+            <button class="lightbox__next" aria-label="image suivante" id="lightbox-next"></button>
+            
+            <p class="lightbox__heading" id="lightbox-title"></p>
+            <div id="blocker"></div>
+        </figure>
+
+        <aside id="total-likes">
+            <p aria-label="nombre total de like" class="tab-element"></p>
+            <i class="fas fa-heart media-like"></i>
+            <p id="photographer-price" class="tab-element" aria-label="prix du photographe"></p>
+        </aside>
     </main>
-    <div id="contact_modal">
-			<div class="modal">
-				<header>
-          <h2>Contactez-moi</h2>
-          <img src="assets/icons/close.svg" onclick="closeModal()" />
-        </header>
-				<form>
-					<div>
-						<label>Prénom</label>
-						<input />
-					</div>
-          <button class="contact_button">Envoyer</button>
-				</form>
-			</div>
-		</div>
-    <script src="/scripts/utils/contactForm.js"></script>
-  </body>
+
+    <script type="module" src="./javascript/photographer.js"></script>
+    <script type="module" src="./javascript/contact.js"></script>
+    <script type="module" src="./javascript/lightbox.js"></script>
+
+</body>
 </html>

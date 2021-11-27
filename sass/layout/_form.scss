@@ -1,0 +1,166 @@
+.form-container {
+    display: none;
+    position: fixed;
+    top: 7%;
+    left: 33%;
+    background-color: $form-color;
+    font-family: 'DM Sans', sans-serif;
+    width: 33%;
+    border-radius: 3px;
+    box-shadow: $grey -3px 3px 6px ;
+    @include fade-in-animation($medium-duration);
+
+    @include tablet {
+        width: 100%;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        margin: auto;
+        height: auto;
+        font-size: 70%;
+    }
+
+    form {
+        padding: 20px 30px 40px 30px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1em;
+
+        .hidden {
+            display: none;
+        }
+
+        #form-title {
+            line-height: 60px;
+            font-size: 2.5em;
+            font-weight: 400;
+            margin: 10px 0 20px 0;
+            white-space: nowrap;
+
+            @include tablet {
+                line-height: 40px;
+            }
+        }
+
+        .form-data-container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-data {
+            color: #312E2E;
+            border-radius: 2px;
+            border-width: 0;
+            height: 40px;
+            margin: 5px 0;
+            border-radius: 3px;
+            font-size: 1em;
+        }
+    }
+
+    label {
+        margin-top: 5px;
+        font-weight: 200;
+        font-size: 1.5em;
+    }
+
+    #form-msg {
+        height: 200px;
+        font-size: 1.5em
+    }
+
+    #form-btn {
+        @extend .contact;
+        height: 50px;
+        padding: 0;
+        margin-top: 10px;
+        font-size: 0.9em;
+
+        @include tablet {
+            font-size: 1.5em;
+        }
+    }
+    #ok-btn {
+        @extend #form-btn
+    }
+}
+
+// creates closing cross
+
+.close {
+    position: absolute;
+    right: 40px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    transition: 200ms;
+
+    @include tablet {
+        width: 20px;
+        height: 20px;
+    }
+
+    &:hover {
+        opacity: 0.6;
+        transition: 200ms;
+      }
+    &:before {
+        transform: rotate(45deg);
+      }
+    &:after {
+        transform: rotate(-45deg);
+      }
+    &:before, &:after {
+    position: absolute;
+    left: 18px;
+    content: ' ';
+    height: 40px;
+    width: 5px;
+    background-color: white;
+    }
+  }
+  
+  
+// Error messages
+
+.form-data-container[data-error-visible=true]::after {
+    content: attr(data-error);
+    font-size: 0.8em;
+    color: #a30414;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    text-align: right;
+    line-height: 0.3;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.form-data-container[data-error-visible=true]::after {
+    opacity: 1;
+}
+
+.form-data-container[data-error-visible=true] input, .form-data-container[data-error-visible=true] textarea  {
+    border: 2px solid #e54858;
+}
+
+input[data-error]::after {
+    content: attr(data-error);
+    font-size: 0.4em;
+    color: #e54858;
+}
+
+// confirmation modal
+
+#form-sent {
+    height: 70%;
+    width: 33%;
+}
+
+#confirmation-msg {
+    text-align: center;
+    padding: 300px 5%;
+    font-size: 1.3em;
+}

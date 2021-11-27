@@ -1,0 +1,53 @@
+.photographer-profile {
+    text-align: center;
+    @include fade-in-animation($slow-duration);
+
+    @include tablet {
+        margin-bottom: $medium-spacing;
+    }
+    
+    *{
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    .link {
+        cursor: pointer;
+    }
+
+    &__image {
+        width: 200px;
+        border-radius: 200px;
+        height: 200px;
+        object-fit: cover;
+
+    }
+    &__heading {
+        font-size: 2.5em;
+        color: $secondary;
+        font-weight: 400;
+        margin-bottom: -15px;
+    }
+    &__location {
+        font-size: 1.2em;
+        color: $primary;
+        font-weight: 300;
+    }
+    &__tagline {
+        font-size: 0.9em;
+    }
+    &__price {
+        margin-top: 4px;
+        font-size: 0.8em;
+        color: grey;
+    }
+    &__tags {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .tag-list {
+        @include desktop {
+            flex-wrap: wrap;
+        }
+    }
+}
