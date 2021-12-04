@@ -153,17 +153,6 @@
         "likes": 88,
         "date": "2007-05-07",
         "price": 55,
-        "alt": "Peinture artistique représentant un triangle avec un homme en arrière plan"
-      },
-      {
-        "id": 7502053,
-        "photographerId": 82,
-        "title": "Triangle Man",
-        "image": "Art_Triangle_Man.jpg",
-        "tags": ["art"],
-        "likes": 88,
-        "date": "2007-05-07",
-        "price": 55,
         "alt": "peinture urbaine d'un triangle sur le gros plan du haut d'un corps masculin"
       },
       {
@@ -734,4 +723,3 @@
       }
     ]
   }
-  
