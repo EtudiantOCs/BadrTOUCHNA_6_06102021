@@ -76,7 +76,7 @@
         "likes": 62,
         "date": "2011-12-08",
         "price": 55,
-        "alt": "test ok"
+        "alt": "Femme avec une tenue jaune sur un terrain de basket proche de la plage"
       },
       {
         "id": 8520927,
@@ -87,7 +87,7 @@
         "likes": 11,
         "date": "2011-11-06",
         "price": 55,
-        "alt": "aaa"
+        "alt": "Femme blonde avec une tenue verte contenant des motifs de plantes tropicales, elle se trouve sur un pont"
       },
       {
         "id": 9025895,
@@ -98,7 +98,7 @@
         "likes": 72,
         "date": "2013-08-12",
         "price": 55,
-        "alt": "s"
+        "alt": "Femme avec une tenue fashion"
       },
       {
         "id": 9275938,
@@ -109,7 +109,7 @@
         "likes": 69,
         "date": "2018-02-22",
         "price": 55,
-        "alt": "s"
+        "alt": "Lieu de cérémonie"
       },
       {
         "id": 2053494,
@@ -120,7 +120,7 @@
         "likes": 2,
         "date": "2020-05-25",
         "price": 55,
-        "alt": "ss"
+        "alt": "Ambiance festive, plusieurs individues présent sur la photo "
       },
       {
         "id": 7324238,
@@ -131,7 +131,7 @@
         "likes": 33,
         "date": "2019-06-12",
         "price": 55,
-        "alt": "s"
+        "alt": "Photo d'un évenement pour un anniversaire on y voit une table et deux ballons gonflables représentant le chiffre 18"
       },
       {
         "id": 8328953,
@@ -142,7 +142,7 @@
         "likes": 24,
         "date": "2011-12-08",
         "price": 100,
-        "alt": "s"
+        "alt": "Cheval en bois"
       },
       {
         "id": 7502053,
@@ -153,7 +153,18 @@
         "likes": 88,
         "date": "2007-05-07",
         "price": 55,
-        "alt": "s"
+        "alt": "Peinture artistique représentant un triangle avec un homme en arrière plan"
+      },
+      {
+        "id": 7502053,
+        "photographerId": 82,
+        "title": "Triangle Man",
+        "image": "Art_Triangle_Man.jpg",
+        "tags": ["art"],
+        "likes": 88,
+        "date": "2007-05-07",
+        "price": 55,
+        "alt": "peinture urbaine d'un triangle sur le gros plan du haut d'un corps masculin"
       },
       {
         "id": 8523492,
@@ -164,7 +175,7 @@
         "likes": 24,
         "date": "2018-05-05",
         "price": 55,
-        "alt": "s"
+        "alt": "tunnel urbain rempli de graffiti illuminé d'une faible lumière mauve"
       },
       {
         "id": 75902334,
@@ -175,7 +186,7 @@
         "likes": 75,
         "date": "2019-11-25",
         "price": 55,
-        "alt": "s"
+        "alt": "peinture urbaine d'une figure répétitive de pigeons"
       },
   
       {
@@ -187,7 +198,7 @@
         "likes": 52,
         "date": "2013-02-30",
         "price": 70,
-        "alt": "s"
+        "alt": "athlète sur un aviron, vu de haut"
       },
       {
         "id": 92758372,
@@ -198,7 +209,7 @@
         "likes": 58,
         "date": "2018-07-17",
         "price": 70,
-        "alt": "s"
+        "alt": "couple de chorégraphes habillés de manière contrasté"
       },
       {
         "id": 32958383,
@@ -209,7 +220,7 @@
         "likes": 11,
         "date": "2019-08-12",
         "price": 70,
-        "alt": "s"
+        "alt": "femme habillé d'une robe rouge"
       },
       {
         "id": 928587383,
@@ -220,7 +231,7 @@
         "likes": 2,
         "date": "2019-01-02",
         "price": 70,
-        "alt": "s"
+        "alt": "réunion de travail"
       },
       {
         "id": 725639493,
@@ -231,7 +242,7 @@
         "likes": 3,
         "date": "2019-05-20",
         "price": 70,
-        "alt": "s"
+        "alt": "réunion présentation produit dans une entreprise"
       },
       {
         "id": 23394384,
@@ -242,7 +253,7 @@
         "likes": 52,
         "date": "2019-07-18",
         "price": 70,
-        "alt": "s"
+        "alt": "musicienne jouant du synthétiseur"
       },
       {
         "id": 87367293,
@@ -253,7 +264,7 @@
         "likes": 23,
         "date": "2018-02-22",
         "price": 70,
-        "alt": "s"
+        "alt": "chanteuse dans un concert"
       },
       {
         "id": 593834784,
@@ -264,7 +275,7 @@
         "likes": 52,
         "date": "2017-03-13",
         "price": 70,
-        "alt": "s"
+        "alt": "gros plan d'un cerf au coucher du soleil"
       },
       {
         "id": 83958935,
@@ -275,7 +286,7 @@
         "likes": 52,
         "date": "2016-06-12",
         "price": 70,
-        "alt": "s"
+        "alt": "plan vidéo d'un chien jouant dans le sable"
       },
   
       {
@@ -287,7 +298,7 @@
         "likes": 23,
         "date": "2017-03-18",
         "price": 45,
-        "alt": "s"
+        "alt": "plan de haut d'une montagne"
       },
       {
         "id": 343423425,
@@ -298,7 +309,7 @@
         "likes": 101,
         "date": "2017-04-03",
         "price": 45,
-        "alt": "s"
+        "alt": "bains chauds extérieurs"
       },
       {
         "id": 73434243,
@@ -309,7 +320,7 @@
         "likes": 99,
         "date": "2018-04-30",
         "price": 45,
-        "alt": "s"
+        "alt": "route traversant un paysage montagneux"
       },
       {
         "id": 23425523,
@@ -320,7 +331,7 @@
         "likes": 34,
         "date": "2016-04-05",
         "price": 45,
-        "alt": "s"
+        "alt": "pont traversant une fôret"
       },
       {
         "id": 23134513,
@@ -331,7 +342,7 @@
         "likes": 23,
         "date": "2017-03-18",
         "price": 45,
-        "alt": "s"
+        "alt": "grand plan d'un lac dans une montagne vu d'une barque"
       },
       {
         "id": 92352352,
@@ -342,7 +353,7 @@
         "likes": 66,
         "date": "2018-05-24",
         "price": 45,
-        "alt": "s"
+        "alt": "portrait d'une jeune femme rousse souriant"
       },
       {
         "id": 34513453,
@@ -353,7 +364,7 @@
         "likes": 52,
         "date": "2017-04-21",
         "price": 45,
-        "alt": "s"
+        "alt": "noir et blanc d'un jeune homme en fond noir"
       },
       {
         "id": 23523533,
@@ -364,7 +375,7 @@
         "likes": 95,
         "date": "2018-11-02",
         "price": 45,
-        "alt": "s"
+        "alt": "portrait d'une jeune femme noire avec chevelure blanche"
       },
       {
         "id": 525834234,
@@ -375,7 +386,7 @@
         "likes": 25,
         "date": "2019-01-02",
         "price": 45,
-        "alt": "s"
+        "alt": "portrait vieil homme tenant une cigarette"
       },
   
       {
@@ -387,7 +398,7 @@
         "likes": 88,
         "date": "2019-02-03",
         "price": 45,
-        "alt": "s"
+        "alt": "photo de paysage montagneux et rocailleux illuminé par un fil de lumière"
       },
       {
         "id": 625025343,
@@ -398,7 +409,7 @@
         "likes": 85,
         "date": "2019-04-03",
         "price": 45,
-        "alt": "s"
+        "alt": "paysage d'un village italien sur la côte rocheuse de la méditéranée en début de soirée"
       },
       {
         "id": 2525345343,
@@ -409,7 +420,7 @@
         "likes": 34,
         "date": "2019-04-07",
         "price": 45,
-        "alt": "s"
+        "alt": "portrait d'une fille grimaçant"
       },
       {
         "id": 2523434634,
@@ -420,7 +431,7 @@
         "likes": 63,
         "date": "2019-04-07",
         "price": 45,
-        "alt": "s"
+        "alt": "portrait jeune photo aux cheveux courts portant des lunettes"
       },
       {
         "id": 398847109,
@@ -431,7 +442,7 @@
         "likes": 55,
         "date": "2019-06-20",
         "price": 45,
-        "alt": "s"
+        "alt": "portait jeune femme en noir et blanc sur fond noir"
       },
       {
         "id": 2534342,
@@ -442,7 +453,7 @@
         "likes": 25,
         "date": "2019-06-21",
         "price": 45,
-        "alt": "s"
+        "alt": "décor de la table d'invités de mariage"
       },
       {
         "id": 65235234,
@@ -453,7 +464,7 @@
         "likes": 52,
         "date": "2019-06-25",
         "price": 45,
-        "alt": "s"
+        "alt": "photographie intime de mariées"
       },
       {
         "id": 23523434,
@@ -464,7 +475,7 @@
         "likes": 77,
         "date": "2019-06-28",
         "price": 45,
-        "alt": "s"
+        "alt": "couple de mariée sur le lieu vide de la cérémonie"
       },
       {
         "id": 5234343,
@@ -475,7 +486,7 @@
         "likes": 142,
         "date": "2019-08-23",
         "price": 60,
-        "alt": "s"
+        "alt": "chevaux autour des montagnes enneigées"
       },
       {
         "id": 95234343,
@@ -486,7 +497,7 @@
         "likes": 59,
         "date": "2019-07-02",
         "price": 60,
-        "alt": "s"
+        "alt": "gros plan oiseau multicoloré"
       },
   
       {
@@ -498,7 +509,7 @@
         "likes": 25,
         "date": "2019-04-03",
         "price": 60,
-        "alt": "s"
+        "alt": "japonaises habillés en tenue traditionnelle dans un vieu quartier à la tombé de la nuit"
       },
       {
         "id": 2523434,
@@ -509,7 +520,7 @@
         "likes": 53,
         "date": "2019-05-06",
         "price": 60,
-        "alt": "s"
+        "alt": "grand canal de venise à la lumière du crépuscule"
       },
       {
         "id": 95293534,
@@ -520,7 +531,7 @@
         "likes": 33,
         "date": "2019-05-12",
         "price": 60,
-        "alt": "s"
+        "alt": "paysage d'un lac dans une fôret précédent des montagnes à la couleur bleuté"
       },
       {
         "id": 356234343,
@@ -531,7 +542,7 @@
         "likes": 53,
         "date": "2019-06-20",
         "price": 60,
-        "alt": "s"
+        "alt": "vélo devant un réverbère dans le quartier de Montmartre"
       },
       {
         "id": 235234343,
@@ -542,7 +553,7 @@
         "likes": 63,
         "date": "2019-06-26",
         "price": 60,
-        "alt": "s"
+        "alt": "porte d'un batiment au style andaloue donnant vu sur les hauteurs de la ville"
       },
       {
         "id": 6234234343,
@@ -553,7 +564,7 @@
         "likes": 52,
         "date": "2019-06-30",
         "price": 60,
-        "alt": "s"
+        "alt": "gros plan église orthodoxe"
       },
       {
         "id": 6525666253,
@@ -564,7 +575,7 @@
         "likes": 63,
         "date": "2019-07-20",
         "price": 60,
-        "alt":"s"
+        "alt":"village sur le haut d'une coline precedent un paysage montagneux"
       },
       {
         "id": 98252523433,
@@ -575,7 +586,7 @@
         "likes": 88,
         "date": "2020-01-05",
         "price": 60,
-        "alt": "s"
+        "alt": "contre plongée d'une tour romaine"
       },
       {
         "id": 9259398453,
@@ -586,7 +597,7 @@
         "likes": 57,
         "date": "2020-01-20",
         "price": 65,
-        "alt": "s"
+        "alt": "plan en hauteur d'un echangeur de routes"
       },
       {
         "id": 3523523534,
@@ -597,7 +608,7 @@
         "likes": 54,
         "date": "2020-05-05",
         "price": 60,
-        "alt": ""
+        "alt": "gros plan d'un batiment hausmanien à la brique rouge et blanche"
       },
   
       {
@@ -609,7 +620,7 @@
         "likes": 150,
         "date": "2018-02-30",
         "price": 70,
-        "alt": "s"
+        "alt": "danceuse durant la répétition"
       },
       {
         "id": 235234343,
@@ -620,7 +631,7 @@
         "likes": 101,
         "date": "2018-03-05",
         "price": 65,
-        "alt": "s"
+        "alt": "plan d'une femme escaladant une falaise"
       },
       {
         "id": 235343222,
@@ -631,7 +642,7 @@
         "likes": 103,
         "date": "2018-03-10",
         "price": 70,
-        "alt": "s"
+        "alt": "surfeur sous une vague"
       },
       {
         "id": 7775342343,
@@ -642,7 +653,7 @@
         "likes": 77,
         "date": "2018-04-16",
         "price": 50,
-        "alt": "s"
+        "alt": "skieur en plein saut"
       },
       {
         "id": 9253445784,
@@ -653,7 +664,7 @@
         "likes": 88,
         "date": "2018-04-22",
         "price": 65,
-        "alt": "s"
+        "alt": "course de sprint féminin sur piste athlétique"
       },
       {
         "id": 22299394,
@@ -664,7 +675,7 @@
         "likes": 95,
         "date": "2018-04-27",
         "price": 70,
-        "alt": "s"
+        "alt": "skater effectuant une figure en hauteur d'un skate parc devant la plage"
       },
       {
         "id": 3452342633,
@@ -675,7 +686,7 @@
         "likes": 52,
         "date": "2018-05-03",
         "price": 75,
-        "alt": "s"
+        "alt": "plafond d'un batiment contemporain en voute"
       },
       {
         "id": 939234243,
@@ -686,7 +697,7 @@
         "likes": 55,
         "date": "2018-05-10",
         "price": 72,
-        "alt": "s"
+        "alt": "plan d'un batiment contemporain sur l'eau ayant la forme d'une dune"
       },
       {
         "id": 222959233,
@@ -697,7 +708,7 @@
         "likes": 85,
         "date": "2018-05-15",
         "price": 71,
-        "alt": "s"
+        "alt": "vu de dessous d'une façade d'un batiment contemporain courbé"
       },
       {
         "id": 965933434,
@@ -708,7 +719,7 @@
         "likes": 66,
         "date": "2018-05-20",
         "price": 58,
-        "alt": "s"
+        "alt": "vu de dessous de la façade de deux batiments aux formes géométriques"
       },
       {
         "id": 777723343,
@@ -719,7 +730,7 @@
         "likes": 79,
         "date": "2018-05-21",
         "price": 80,
-        "alt" : "s"
+        "alt" : "batiment contemporain bleu aux formes courbées"
       }
     ]
   }
