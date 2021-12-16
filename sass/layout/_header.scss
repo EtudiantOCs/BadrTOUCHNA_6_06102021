@@ -4,18 +4,7 @@
 
     .banner {
         margin: 0 20px;
-        
-        @include tablet {
-            margin: 35px $small-spacing;
-            img {
-                width: 170px;           
-            } 
-        }
-        @include mobile {
-            margin: $medium-spacing $small-spacing;
-            img {
-                width: 130px;
-            }
+
         }
 
     }
@@ -37,17 +26,4 @@
             }
         }
 
-        @include tablet {
-            display: flex;
-            position: absolute;
-            top: 130px;
-            width: 90%;
-            left: 2%;
-            right: 2%;
-            .tag-list {
-                flex-wrap: wrap;
-            }
-        }
-
     }
-}

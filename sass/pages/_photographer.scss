@@ -35,9 +35,6 @@
         left: 80%;
         top: 180px;
 
-        @include desktop {
-            left: 75%;
-        }
     }
     .photographer-profile__tagline {
         color: gray;
@@ -46,10 +43,7 @@
         display: none;
     }
 
-    @include tablet {
-        padding: 0;
-        margin: 0 $small-spacing;            
-        
+
         .photographer-profile {
             text-align: left;
             width: 70%;
@@ -76,13 +70,8 @@
             }
         }
     }
-    @include small-mobile {
-        .photographer-profile {
-            width: 60%;
-        }
-    }
 
-}
+
 
 
 #total-likes {
@@ -102,9 +91,6 @@
         margin-right: 20px;
     }
 
-    @include tablet {
-        display: none;
-    }
 }
 
 #error-not-found {
@@ -114,7 +100,4 @@
     text-align: center;
     margin: $big-spacing $small-spacing;
 
-    @include tablet {
-        font-size: 1.2em;
-    }
 }

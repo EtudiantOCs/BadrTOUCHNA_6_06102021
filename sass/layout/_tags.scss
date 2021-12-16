@@ -53,16 +53,10 @@
         border-color: gray;
         color: gray;
         transition: none;
-        @include tablet { border-color: unset;
-            color: unset;
-            transition: unset;
-        }
+
         &::after { content: ' x';
             color: rgba(202, 0, 0, 0.719);
-            @include tablet {
-                content: none;
-                color: unset; 
-            } 
+
         }
             
     }

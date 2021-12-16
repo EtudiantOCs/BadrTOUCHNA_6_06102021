@@ -10,10 +10,6 @@
     z-index: 1;
     animation: displayLightbox 500ms linear;
 
-    @include tablet {
-        height: 100%;       
-    }
-
     button {
         opacity: 0.8;
         transition: 300ms;
@@ -38,12 +34,6 @@
             right: 1%;
             top: 60px;
         }
-        
-        @include tablet { 
-            background: url(./svg/Vector.svg) center center / 15px no-repeat;
-            right: -4%;
-            top: 27%;
-        }
 
     }
     &__prev {
@@ -59,11 +49,6 @@
             left: 0%;
         }
 
-        @include tablet { 
-            background: url(./svg/Vector-next.svg) center center / 15px no-repeat;
-            left: -6%;
-        }
-
     }
     &__next {
         background: url(./svg/Vector-next.svg) center center / 30px no-repeat;
@@ -77,10 +62,7 @@
             right: 0%;
         }
 
-        @include tablet { 
-            background: url(./svg/Vector-next.svg) center center / 15px no-repeat;
-            right: -6%;
-        }
+
     }
     &__container {
         margin: auto;
@@ -88,9 +70,7 @@
         display: flex;
         justify-content: center;
 
-        @include tablet {
-            
-        }
+
         
         img, video {
             margin: auto;
@@ -111,11 +91,7 @@
                 height: 580px;
             }
 
-            @include tablet {
-               
-                width: 80%;
-                height: 280px;
-            }
+
         }
     }
     &__heading {
@@ -130,10 +106,7 @@
             bottom: 5%;
         }
 
-        @include tablet {
-            left: 10%;
-            bottom: 26%;
-        }
+
     }
 }
 

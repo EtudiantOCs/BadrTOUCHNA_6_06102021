@@ -2,9 +2,7 @@
     text-align: center;
     @include fade-in-animation($slow-duration);
 
-    @include tablet {
-        margin-bottom: $medium-spacing;
-    }
+
     
     *{
         padding: 5px;

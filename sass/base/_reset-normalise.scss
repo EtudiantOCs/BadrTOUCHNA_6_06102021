@@ -32,9 +32,6 @@ body {
 		margin: $medium-spacing;
 	}
 
-	@include tablet {
-		margin: $small-spacing;
-	}	
 }
 
 *:focus-visible {

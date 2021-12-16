@@ -10,16 +10,7 @@
     box-shadow: $grey -3px 3px 6px ;
     @include fade-in-animation($medium-duration);
 
-    @include tablet {
-        width: 100%;
-        top: 0%;
-        bottom: 0%;
-        left: 0%;
-        right: 0%;
-        margin: auto;
-        height: auto;
-        font-size: 70%;
-    }
+
 
     form {
         padding: 20px 30px 40px 30px;
@@ -38,9 +29,6 @@
             margin: 10px 0 20px 0;
             white-space: nowrap;
 
-            @include tablet {
-                line-height: 40px;
-            }
         }
 
         .form-data-container {
@@ -77,9 +65,7 @@
         margin-top: 10px;
         font-size: 0.9em;
 
-        @include tablet {
-            font-size: 1.5em;
-        }
+
     }
     #ok-btn {
         @extend #form-btn
@@ -97,10 +83,6 @@
     opacity: 1;
     transition: 200ms;
 
-    @include tablet {
-        width: 20px;
-        height: 20px;
-    }
 
     &:hover {
         opacity: 0.6;
